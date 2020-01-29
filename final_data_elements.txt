@@ -1,0 +1,420 @@
+*** Step 1 - Identify Data Elements ***
+Participant name
+Participant team name
+Participant wins
+Participant loses
+Participant quarterback
+Participant running back
+Participant wide receiver
+Participant defense
+Participant tight end
+Participant kicker
+quarterback name
+quarterback participant team
+quarterback pro team
+quarterback passing yards
+quarterback passing touchdowns
+quarterback rushing yards
+quarterback rushing touchdowns
+quarterback interceptions
+quarterback fumbles
+quarterback points
+quarterback games played
+quarterback injury
+running back name
+running back rushing yards
+running back rushing touchdowns
+running back participant team
+running back pro team
+running back receiving yards
+running back receiving touchdowns
+running back fumbles
+running back points
+running back games played
+running back injury
+wide receiver name
+wide receiver participant team
+wide receiver pro team
+wide receiver receiving yards
+wide receiver receiving touchdowns
+wide receiver rushing yards
+wide receiver rushing touchdowns
+wide receiver fumbles
+wide receiver points
+wide receiver games played
+wide receiver injury
+defense interceptions
+defense touchdowns
+defense fumbles forced
+defense points allowed
+defense sacks
+defense participant team
+defense pro team
+defense points
+defense games played
+tight end name
+tight end participant team
+tight end pro team
+tight end receiving yards
+tight end receiving touchdowns
+tight end fumbles
+tight end points
+tight end games played
+tight end injury
+kicker name
+kicker participant team
+kicker pro team
+kicker extra points
+kicker field goals
+kicker points
+kicker games played
+kicker injury
+points per passing yards
+points per passing touchdowns
+points per offensive interceptions
+points per offensive fumbles
+points per rushing yards
+points per rushing touchdowns
+points per receiving yards
+points per receiving touchdowns
+points per field goals
+points per extra points
+points per defense touchdowns
+points per defense interceptions
+points per defense sacks
+points per defense fumbles
+league name
+league commissioner
+league commissioner email
+weekly total points
+week number
+
+
+*** Step 2 - Subdivide ***
+Participant name
+-- participant first name
+-- participant last name
+Participant team name
+Participant wins
+Participant loses
+Participant quarterback
+Participant running back
+Participant wide receiver
+Participant defense
+Participant tight end
+Participant kicker
+
+quarterback name
+-- quarterback first name
+-- quarterback last name
+quarterback participant team
+quarterback pro team
+quarterback passing yards
+quarterback passing touchdowns
+quarterback rushing yards
+quarterback rushing touchdowns
+quarterback interceptions
+quarterback fumbles
+quarterback points
+-- quarterback total points
+-- quarterback average points
+quarterback games played
+quarterback injury
+
+running back name
+-- running back first name
+-- running back last name
+running back rushing yards
+running back rushing touchdowns
+running back participant team
+running back pro team
+running back receiving yards
+running back receiving touchdowns
+running back fumbles
+running back points
+-- running back total points
+-- running back average points
+running back games played
+running back injury
+
+wide receiver name
+-- wide receiver first name
+-- wide receiver last name
+wide receiver participant team
+wide receiver pro team
+wide receiver receiving yards
+wide receiver receiving touchdowns
+wide receiver rushing yards
+wide receiver rushing touchdowns
+wide receiver fumbles
+wide receiver points
+-- wide receiver total points
+-- wide receiver average points
+wide receiver games played
+wide receiver injury
+
+defense interceptions
+defense touchdowns
+defense fumbles forced
+defense points allowed
+defense sacks
+defense participant team
+defense pro team
+defense points
+-- defense total points
+-- defense average points
+defense games played
+
+tight end name
+-- tight end first name
+-- tight end last name
+tight end participant team
+tight end pro team
+tight end receiving yards
+tight end receiving touchdowns
+tight end fumbles
+tight end points
+-- tight end total points
+-- tight end average points
+tight end games played
+tight end injury
+
+kicker name
+-- kicker first name
+-- kicker last name
+kicker participant team
+kicker pro team
+kicker extra points
+-- kicker missed extra points
+-- kicker made field goals
+kicker field goals
+-- kicker field goals 50+ yards
+-- kicker field goals 40-49 yards
+-- kicker field goals 30-39 yards
+-- kicker field goals < 30 yards
+-- kicker missed field goals
+kicker points
+-- kicker total points
+-- kicker average points
+kicker games played
+kicker injury
+
+points per passing yards
+points per passing touchdowns
+points per offensive interceptions
+points per offensive fumbles
+points per rushing yards
+points per rushing touchdowns
+points per receiving yards
+points per receiving touchdowns
+points per field goals
+-- points per field goal 50 + yards
+-- points per field goal 40-49 yards
+-- points per field goal 30-39 yards
+-- points per field goal < 30 yards
+-- points per missed field goals
+points per extra points
+-- points per made extra points
+-- points per missed extra points
+points per defense touchdowns
+points per defense interceptions
+points per defense sacks
+points per defense fumbles
+
+weekly
+weekly id
+weekly total points
+week number
+
+league
+league name
+league commissioner
+league commissioner email
+
+
+
+*** Step 3 - Identify Tables and Columns ***
+Participant
+-- Participant id
+-- Participant first name
+-- Participant last name
+-- Participant team name
+-- Participant wins
+-- Participant losses
+
+
+Points Per
+-- points per passing yards
+-- points per passing touchdowns
+-- points per offensive interceptions
+-- points per offensive fumbles
+-- points per rushing yards
+-- points per rushing touchdowns
+-- points per receiving yards
+-- points per receiving touchdowns
+-- points per field goal 50 + yards
+-- points per field goal 40-49 yards
+-- points per field goal 30-39 yards
+-- points per field goal < 30 yards
+-- points per missed field goals
+-- points per made extra points
+-- points per missed extra points
+-- points per defense touchdowns
+-- points per defense interceptions
+-- points per defense sacks
+-- points per defense fumbles
+-- points_id
+
+Quarterbacks
+-- quarterback id
+-- quarterback first name
+-- quarterback last name
+-- quarterback participant team
+-- quarterback pro team
+-- quarterback passing yards
+-- quarterback passing touchdowns
+-- quarterback rushing yards
+-- quarterback rushing touchdowns
+-- quarterback interceptions
+-- quarterback fumbles
+-- quarterback total points
+-- quarterback average points
+-- quarterback games played
+-- quarterback injury
+-- Participant id
+
+Running Backs
+-- running back id
+-- running back first name
+-- running back last name
+-- running back rushing yards
+-- running back rushing touchdowns
+-- running back participant team
+-- running back pro team
+-- running back receiving yards
+-- running back receiving touchdowns
+-- running back fumbles
+-- running back total points
+-- running back average points
+-- running back games played
+-- running back injury
+-- Participant id
+
+Wide Receivers
+-- wide receiver id
+-- wide receiver first name
+-- wide receiver last name
+-- wide receiver participant team
+-- wide receiver pro team
+-- wide receiver receiving yards
+-- wide receiver receiving touchdowns
+-- wide receiver rushing yards
+-- wide receiver rushing touchdowns
+-- wide receiver fumbles
+-- wide receiver total points
+-- wide receiver average points
+-- wide receiver games played
+-- wide receiver injury
+-- Participant id
+
+Defense
+-- defense id
+-- defense interceptions
+-- defense touchdowns
+-- defense fumbles forced
+-- defense points allowed
+-- defense sacks
+-- defense participant team
+-- defense pro team
+-- defense total points
+-- defense average points
+-- defense games played
+-- Participant id
+
+Tight End
+-- tight end id
+-- tight end first name
+-- tight end last name
+-- tight end participant team
+-- tight end pro team
+-- tight end receiving yards
+-- tight end receiving touchdowns
+-- tight end fumbles
+-- tight end total points
+-- tight end average points
+-- tight end games played
+-- tight end injury
+-- Participant id
+
+Kicker
+-- kicker id
+-- kicker first name
+-- kicker last name
+-- kicker participant team
+-- kicker pro team
+-- kicker missed extra points
+-- kicker made extra points
+-- kicker field goals 50+ yards
+-- kicker field goals 40-49 yards
+-- kicker field goals 30-39 yards
+-- kicker field goals < 30 yards
+-- kicker missed field goals
+-- kicker total points
+-- kicker average points
+-- kicker games played
+-- kicker injury
+-- Participant id
+
+League
+-- league_name
+-- league_commissioner
+-- league_commissioner_email
+-- league_id
+-- points_id
+
+Weekly
+-- weekly_id
+-- weekly_total_points
+-- Participant quarterback
+-- Participant running back
+-- Participant wide receiver
+-- Participant tight end
+-- Participant defense
+-- Participant kicker
+-- week number
+
+
+*** Step 4: Identify primary and foreign keys ***
+PK:
+participant.participant_id
+kicker.kicker_id
+tightEnd.tightEnd_id
+defense.defense_id
+wideReceiver.wideReceiver_id
+runningBack.runningBack_id
+quarterback.quarterback_id
+points.points_id
+league.league_id
+weekly.weekly_id
+
+FK:
+participant.quarterback_id
+participant.runningBack_id
+participant.wideReceiver_id
+participant.defense_id
+participant.tightEnd_id
+participant.kicker_id
+quarterback.participant_id
+runningBack.participant_id
+wideReceiver.participant_id
+defense.participant_id
+tightEnd.participant_id
+kicker.participant_id
+league.points_id
+weekly.quarterback_id
+weekly.runningBack_id
+weekly.defense_id
+weekly.wideReceiver_id
+weekly.tightEnd_id
+weekly.kicker_id
+weekly.participant_id

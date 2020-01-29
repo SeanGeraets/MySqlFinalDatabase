@@ -1,0 +1,29 @@
+A fantasy football database that can be used to store information on each participant's team and store information for the football players
+
+Store the participants name and their team name
+
+Store the players on each participants team
+
+Store the win/loss record for each participant
+
+Store football players based on their position
+
+Store the important stats for each football player based on their position
+
+Store the amount of points gained for each player stat
+
+Store the injury status for each player
+
+Be able to search for players that are not on a participant's team
+
+Be able to search for players based on the team they play for
+
+Be able to update each players stats after they have played a game
+
+Be able to update each participants win/loss record 
+
+Be able to calculate the total points each player has produced
+
+Be able to calculate the average number of points each player has produced
+
+Be able to search for non injured players
